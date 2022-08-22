@@ -5,9 +5,9 @@ const lightTheme = {
 };
 const darkTheme = {
   color: "white",
-  backgroundColor: "black",
+  backgroundColor: "#212d58",
 };
-export const About = () => {
+export const About = (props) => {
   function handleClickTheme() {
     if (myStyle.color === "black") {
       setMyStyle(darkTheme);
@@ -16,6 +16,7 @@ export const About = () => {
       setMyStyle(lightTheme);
       setBtnText("Enable dark mode");
     }
+    props.toggleMode()
   }
   const [myStyle, setMyStyle] = useState(lightTheme);
   const [btnText, setBtnText] = useState("Enable dark mode");

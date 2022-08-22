@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import Textform from "./components/Textform";
 import Navbar from "./components/Navbar";
-// import { About } from "./components/About";
+import { About } from "./components/About";
 import React, { useState } from "react";
-// import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Alert from "./components/Alert";
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
         toggleMode={toggleMode}
       ></Navbar>
       <Alert alert={alert}></Alert>
-      {/* <Routes>
+      <Routes>
         <Route
           path="/"
           element={
@@ -55,16 +55,12 @@ function App() {
           path="/about"
           element={
             <div className="container">
-              <About></About>
+              <About toggleMode={toggleMode}></About>
             </div>
           }
         ></Route>
-      </Routes> */}
-      <Textform
-        heading="This is my heading"
-        mode={mode}
-        handleAlert={handleAlert}
-      ></Textform>
+      </Routes>
+      
     </>
   );
 }
