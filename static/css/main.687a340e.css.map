@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.687a340e.css","mappings":"AAAA,MACI,qBAAsB,CACtB,UACJ,CACA,OACI,qBAAuB,CACvB,UACJ","sources":["components/Textform.css"],"sourcesContent":[".dark{\r\n    background-color: grey;\r\n    color: white;\r\n}\r\n.light{\r\n    background-color: white;\r\n    color: black;\r\n}"],"names":[],"sourceRoot":""}
